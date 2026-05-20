@@ -2,12 +2,12 @@
 
 :root {
     /* Academic Theme Colors */
-    --bg-color: #f7f7f5;
+    --bg-primary: #f7f7f5;
+    --bg-secondary: #ffffff;
     --text-primary: #1f2937;
     --text-secondary: #4b5563;
     --accent: #355c7d;
     --border: #d6d6d6;
-    --card-bg: #ffffff;
     
     /* Typography */
     --font-body: 'Inter', sans-serif;
@@ -41,7 +41,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
@@ -93,7 +93,7 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    background-color: #ffffff;
+    background-color: var(--bg-secondary);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
     display: flex;
@@ -146,14 +146,14 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
     font-weight: 500;
     border-radius: 4px;
     border: 1px solid var(--border);
-    background-color: var(--card-bg);
+    background-color: var(--bg-secondary);
     color: var(--text-primary);
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .btn:hover {
-    background-color: var(--bg-color);
+    background-color: var(--bg-primary);
     text-decoration: none;
 }
 
@@ -203,7 +203,7 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
 }
 
 .highlight-item {
-    background-color: var(--card-bg);
+    background-color: var(--bg-secondary);
     border: 1px solid var(--border);
     padding: var(--space-md);
     border-radius: 4px;
@@ -291,7 +291,7 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
 
 .gallery-item {
     border: 1px solid var(--border);
-    background-color: var(--card-bg);
+    background-color: var(--bg-secondary);
     padding: var(--space-xs);
 }
 
@@ -347,7 +347,7 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: var(--card-bg);
+    background-color: var(--bg-secondary);
     border: 1px solid var(--border);
     color: var(--text-primary);
     transition: background-color 0.2s;
@@ -360,7 +360,7 @@ a:hover { color: var(--text-primary); text-decoration: underline; }
 }
 
 .contact-icon:hover {
-    background-color: var(--bg-color);
+    background-color: var(--bg-primary);
     color: var(--accent);
 }
 
