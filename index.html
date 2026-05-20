@@ -1,278 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Maitra - Paleobiology Research Scholar</title>
-    <meta name="description" content="Portfolio of Akash Maitra, a Ph.D. Student in Paleobiology.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Italiana&display=swap" rel="stylesheet">
+    <title>Akash Maitra | Home</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Custom layout overrides for the portfolio */
-        .header-nav {
-            position: absolute;
-            top: 20px;
-            right: 80px;
-            z-index: 1000;
-        }
-        
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 40px;
-            align-items: center;
-            margin-top: 60px;
-        }
-
-        .profile-img {
-            width: 320px;
-            height: 320px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: var(--shadow-float, 0 10px 30px rgba(0,0,0,0.3));
-        }
-
-        .recent-work-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        @media (max-width: 900px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-                margin-top: 80px;
-            }
-            .profile-img {
-                margin: 0 auto;
-                order: -1;
-            }
-            .header-nav {
-                position: static;
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-            .recent-work-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="scene" aria-hidden="true">
-        <div class="scene__blob scene__blob--1"></div>
-        <div class="scene__blob scene__blob--2"></div>
-        <div class="scene__blob scene__blob--3"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">Akash Maitra</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper container">
+        
+        <!-- Compact Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Akash Maitra</h1>
+                <h4>Ph.D. Researcher in Paleobiology • IISER Kolkata</h4>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-top: 1rem;">
+                    Investigating macroecological and macroevolutionary patterns in marine invertebrates and their causal relationships with biotic and abiotic drivers across the Neogene-Quaternary intervals.
+                </p>
+                <div class="hero-buttons">
+                    <a href="research.html" class="btn btn-primary">Research</a>
+                    <a href="publications.html" class="btn">Publications</a>
+                    <a href="cv.html" class="btn">CV</a>
+                    <a href="contact.html" class="btn">Contact</a>
+                </div>
+            </div>
+            <img src="profile.webp" alt="Akash Maitra" class="hero-image">
+        </section>
+
+        <!-- Research Summary -->
+        <section style="margin-bottom: var(--space-xl);">
+            <h2>Research Summary</h2>
+            <p>
+                My research focuses on understanding the evolutionary dynamics of marine benthic communities over deep time. By analyzing fossil records, particularly from the Neogene and Quaternary periods, I aim to uncover how major environmental perturbations and climatic shifts have shaped biodiversity and extinction rates.
+            </p>
+            <p>
+                A significant portion of my work investigates predator-prey dynamics, specifically focusing on drilling predation by Naticid gastropods. Through rigorous field sampling, paleocommunity analysis, and statistical modeling, I reconstruct ancient marine ecosystems to trace the escalation of biotic interactions and their role in macroevolution.
+            </p>
+        </section>
+
+        <!-- Featured Highlights -->
+        <section style="margin-bottom: var(--space-xl);">
+            <h2>Featured Highlights</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <span class="highlight-date">2019 • Publication</span>
+                    <h4>Substrate-controlled Naticid Gastropod Drilling Predation</h4>
+                    <p style="font-size: 0.9rem;">Published in <em>Historical Biology</em>. A detailed analysis of predation patterns on recent barnacles from Chandipur, India, and their paleontological implications.</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-date">July 2021 • Conference</span>
+                    <h4>IGCP 668 - Equatorial Gondwanan history</h4>
+                    <p style="font-size: 0.9rem;">Participated in discussions regarding equatorial Gondwanan history at the University of Tsukuba, Japan.</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-date">January 2020 • Conference</span>
+                    <h4>Deep Time Biodiversity of Bengal</h4>
+                    <p style="font-size: 0.9rem;">Presented research findings at the Indian Statistical Institute, Kolkata, focusing on regional deep time biodiversity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Updates -->
+        <section>
+            <h2>Recent Updates</h2>
+            <ul style="padding-left: var(--space-md); color: var(--text-secondary);">
+                <li style="margin-bottom: 0.5rem;"><strong>[2021]</strong> Began Ph.D. research under Dr. Subhronil Mondal at IISER Kolkata.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>[2020]</strong> Conducted reconnaissance paleontology fieldwork in Dwarka, Gujarat.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>[2019]</strong> First-author publication accepted in <em>Historical Biology</em>.</li>
+            </ul>
+        </section>
+
     </div>
 
-    <!-- Theme Toggle -->
-    <button class="glass glass-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle colour scheme" title="Toggle light / dark mode" style="position:fixed; top:20px; right:20px; z-index:1001;">
-        <span class="icon-dark" aria-hidden="true">☀️</span>
-        <span class="icon-light" aria-hidden="true">🌙</span>
-    </button>
-
-    <!-- Main wrapper serves as the tabs container for the JS logic -->
-    <main class="page glass-tabs">
-        
-        <!-- Top Navigation Tabs -->
-        <div class="header-nav">
-            <div class="glass glass-tab-list" role="tablist" aria-label="Portfolio Sections">
-                <button class="glass-tab" role="tab" aria-selected="true" aria-controls="tab-panel-2" id="tab-2">Education</button>
-                <button class="glass-tab" role="tab" aria-selected="false" aria-controls="tab-panel-3" id="tab-3">Field Experience</button>
-                <button class="glass-tab" role="tab" aria-selected="false" aria-controls="tab-panel-4" id="tab-4">Contact</button>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2026 Akash Maitra. Department of Earth Sciences, IISER Kolkata.
         </div>
+    </footer>
 
-        <header class="hero">
-            <div class="hero-grid" style="margin-bottom: 60px;">
-                <div class="hero-left">
-                    <span class="hero__kicker">Research Scholar in Paleobiology</span>
-                    <h1 class="hero__title" style="margin-bottom: 10px;">Akash Maitra</h1>
-                </div>
-                
-                <div class="hero-right">
-                    <img src="profile.webp" alt="Akash Maitra" class="glass profile-img">
-                </div>
-            </div>
-
-            <div style="text-align: center; max-width: 800px; margin: 0 auto 60px auto;">
-                <h3 class="glass-card__title" style="font-size: 1.5rem; color: var(--accent-blue); margin-bottom: 20px;">Current Research Interest</h3>
-                <p class="hero__sub" style="font-size: 1.2rem; margin: 0 auto; line-height: 1.6;">
-                    My current research involves analyzing different macroecological and macroevolutionary patterns in marine invertebrates and their causal relationship with different biotic and abiotic drivers, across the Neogene- Quaternary intervals.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="glass-card__title" style="margin-bottom: 30px; font-size: 1.5rem; text-align: center;">Recent Publications & Conferences</h3>
-                
-                <div class="glass glass-card" style="padding: var(--space-md); margin-bottom: 20px; text-align: left;">
-                    <p class="glass-card__body" style="font-size: var(--text-sm)">Mondal, S., <strong>Maitra, A.</strong>, Bose, K., Goswami, P., Bardhan, S., Mallick, S. 2019.<br><em>Substrate-controlled Naticid Gastropod Drilling Predation on Recent Barnacles from Chandipur, India and its Paleontological Implications.</em> <strong>Historical Biology</strong>.</p>
-                </div>
-                
-                <div class="recent-work-grid" style="text-align: left;">
-                    <div class="glass glass-card" style="padding: var(--space-md);">
-                        <div class="glass-card__label" style="color: var(--accent-aqua)">July 2021</div>
-                        <h4 style="margin-bottom: 8px;">IGCP 668 - Equatorial Gondwanan history</h4>
-                        <p class="glass-card__body" style="font-size: var(--text-sm)">University of Tsukuba, Japan.</p>
-                    </div>
-                    <div class="glass glass-card" style="padding: var(--space-md);">
-                        <div class="glass-card__label" style="color: var(--accent-aqua)">January 2020</div>
-                        <h4 style="margin-bottom: 8px;">Deep Time Biodiversity of Bengal</h4>
-                        <p class="glass-card__body" style="font-size: var(--text-sm)">Indian Statistical Institute, Kolkata.</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="container page" style="padding-bottom: 100px; margin-top: 40px;">
-                
-            <!-- Education Tab -->
-            <div id="tab-panel-2" class="glass glass-tab-panel is-active glass-card" role="tabpanel" aria-labelledby="tab-2">
-                <h3 class="glass-card__title" style="margin-bottom: var(--space-xl)">Education Timeline</h3>
-                <div class="glass-stepper glass-stepper--vertical">
-                    <div class="glass-step is-active">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Ph.D. Student in Paleobiology (Current)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    IISER Kolkata, Dept of Earth Sciences<br>Laboratory Head: Dr. Subhronil Mondal
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Probationary Ph.D. Student in Science (2019-2021)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    University of Calcutta, Kolkata
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Master of Science in Applied Geology (2018)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    NIT Rourkela • CGPA: 8.18/10<br>
-                                    Thesis: Characterisation of Nanominerals in Coal Mine Drainage
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Bachelor of Science with Honours in Geology (2016)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    University of Calcutta, Asutosh College • 71.75%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <h4 class="glass-card__title" style="font-size: 1.2rem; margin-top: var(--space-xl)">Competitive Exams</h4>
-                <div style="display:flex; gap: var(--space-md); flex-wrap: wrap;">
-                    <span class="glass-badge glass-badge--violet"><span class="glass-badge__dot"></span>CSIR-UGC NET (2018): AIR 51 (LS)</span>
-                    <span class="glass-badge glass-badge--aqua"><span class="glass-badge__dot"></span>JAM (2016): AIR 55</span>
-                </div>
-            </div>
-
-            <!-- Experience Tab -->
-            <div id="tab-panel-3" class="glass glass-tab-panel glass-card" role="tabpanel" aria-labelledby="tab-3">
-                <h3 class="glass-card__title" style="margin-bottom: var(--space-xl)">Field Trips & Internships</h3>
-                
-                <div class="glass-stepper glass-stepper--vertical">
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Paleontology Field (2020)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    Dwarka, Gujarat, India<br>Reconnaissance study of marine Neogene lithology and associated fossil fauna.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Paleontology Field (2018)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    Western Coast of India<br>Introduction to various sampling methods and various ecological settings.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Dissertation Project (Jul 2017 - May 2018)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    NIT Rourkela<br>Characterisation of Nanominerals in Coal Mine Drainage.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Summer Internship (2017)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    University of Calcutta<br>Study of Gastropod Drilling Predation on Barnacles.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glass-step__connector"></div>
-                    </div>
-                    <div class="glass-step is-complete">
-                        <div class="glass-step__inner">
-                            <div class="glass-step__node">✓</div>
-                            <div class="glass-step__label">
-                                <strong>Geology Fields (2013-2016)</strong>
-                                <div style="font-size: var(--text-sm); opacity: 0.8; margin-top: 4px;">
-                                    Odisha, Jharkhand, Madhya Pradesh<br>Structural mapping, economic geology, opencast/underground mining.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Tab -->
-            <div id="tab-panel-4" class="glass glass-tab-panel glass-card" role="tabpanel" aria-labelledby="tab-4">
-                <h3 class="glass-card__title" style="margin-bottom: var(--space-xl)">Connect With Me</h3>
-                <div style="display: flex; flex-direction: column; gap: var(--space-md);">
-                    <a href="mailto:am21rs013@iiserkol.ac.in" class="glass glass-btn glass-btn--primary" style="text-decoration: none; width: fit-content;">Email: am21rs013@iiserkol.ac.in</a>
-                    <a href="https://scholar.google.com/citations?user=yaiYOuAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="glass glass-btn" style="text-decoration: none; width: fit-content; background: rgba(255, 255, 255, 0.1);">Google Scholar</a>
-                    <a href="https://www.researchgate.net/profile/Akash-Maitra-2?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="glass glass-btn" style="text-decoration: none; width: fit-content; background: rgba(255, 255, 255, 0.1);">ResearchGate</a>
-                    <a href="https://x.com/_akashmaitra" target="_blank" rel="noopener noreferrer" class="glass glass-btn" style="text-decoration: none; width: fit-content; background: rgba(255, 255, 255, 0.1);">Twitter (X)</a>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
